@@ -1,0 +1,15 @@
+body {
+  padding-top: 50px;
+}
+.intro {
+  padding: 40px 15px;
+  text-align: center;
+}
+.related-sites ul {
+	text-align: center;
+	list-style-type: none;
+	font-size: 30px;
+}
+.summary {
+	/*text-align: center;*/
+}
