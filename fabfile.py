@@ -3,6 +3,7 @@ from fabric.api import *
 from fabric.contrib.console import confirm
 
 env.hosts = ['jasonrhaas.com']
+env.forward_agent = True
 
 def commit():
     local("git add -p && git commit")
@@ -15,6 +16,7 @@ def prep():
     push()
 
 def deploy():
-	code_dir = '~/repos/jhaas-web'
+	code_dir = '/home/jhaas/repos/jhaas-web'
 	with cd(code_dir):
 		run("git pull")
+		# run("echo hello")
